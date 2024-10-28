@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Finance Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Finance Calculator</h1>
+        <form id="transactionForm">
+            <input type="text" id="type" placeholder="Type (income/expense)" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <input type="text" id="date" placeholder="Date (YYYY-MM-DD)" required>
+            <input type="text" id="category" placeholder="Category (e.g., grocery)" required>
+            <input type="text" id="description" placeholder="Description" required>
+            <button type="submit">Add Transaction</button>
+        </form>
+        <div id="message"></div>
+        <div id="transactionList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
