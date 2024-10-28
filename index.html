@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Finance Calculator</title>
+    <title>Finance Tracker</title>
 </head>
 <body>
     <div class="container">
-        <h1>Finance Calculator</h1>
+        <h1>Finance Tracker</h1>
         <form id="transactionForm">
             <input type="text" id="type" placeholder="Type (income/expense)" required>
             <input type="number" id="amount" placeholder="Amount" required>
@@ -18,6 +18,15 @@
             <button type="submit">Add Transaction</button>
         </form>
         <div id="message"></div>
+        <div class="buttons">
+            <button onclick="getBalance()">Get Balance</button>
+            <button onclick="viewLastTransaction()">View Last Transaction</button>
+            <button onclick="clearAllTransactions()">Clear All Transactions</button>
+            <button onclick="removeTopTransaction()">Remove Last Transaction</button>
+            <button onclick="undoLatestRemovedTransaction()">Undo Last Removal</button>
+            <button onclick="getAllTransactions()">View All Transactions</button>
+            <button onclick="tellPositiveOrNegative()">Income vs. Expense Check</button>
+        </div>
         <div id="transactionList"></div>
     </div>
     <script src="script.js"></script>
