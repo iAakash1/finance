@@ -1,60 +1,76 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #f0f4f8;
     margin: 0;
     padding: 20px;
 }
 
 .container {
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
     padding: 20px;
-    background: white;
+    background: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
-    color: #343a40;
+    color: #333;
 }
 
-input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ced4da;
+form input {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
     border-radius: 4px;
 }
 
-button {
+form button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
     border: none;
     border-radius: 4px;
-    background-color: #28a745;
-    color: white;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-button:hover {
+form button:hover {
+    background-color: #0056b3;
+}
+
+.buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
     background-color: #218838;
 }
 
 #message {
-    margin-top: 20px;
-    color: #28a745;
+    color: #007bff;
     font-weight: bold;
+    margin-top: 20px;
 }
 
 #transactionList {
     margin-top: 20px;
-    padding: 10px;
-    background: #e9ecef;
-    border-radius: 4px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
 }
 
 .transaction {
-    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    font-size: 14px;
 }
